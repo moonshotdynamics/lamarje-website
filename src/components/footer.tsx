@@ -30,10 +30,10 @@ export function Footer() {
               <img src="/logo.png" alt="Lamarje Investments" className="h-12 w-auto" />
               <div>
                 <h3 className="text-lg font-bold font-heading">Lamarje</h3>
-                <p className="text-[10px] uppercase tracking-[0.2em] text-white/60">Investments</p>
+                <p className="text-xs uppercase tracking-[0.2em] text-white/60">Investments</p>
               </div>
             </Link>
-            <p className="text-sm text-white/60 leading-relaxed mt-4">
+            <p className="text-sm text-white/70 leading-relaxed mt-4">
               A diversified company established in 2010 with competencies in Consulting, Supply Chain, Trading, Infrastructure Development and Financing across Africa.
             </p>
           </div>
@@ -115,7 +115,7 @@ export function Footer() {
         <Separator className="my-10 bg-white/10" />
 
         {/* Bottom */}
-        <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-white/40">
+        <div className="flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-white/60">
           <p>© {new Date().getFullYear()} Lamarje Investments (Pty) Ltd. All rights reserved.</p>
           <p>Designed with precision. Built for Africa&apos;s future.</p>
         </div>

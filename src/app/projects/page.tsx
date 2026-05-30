@@ -165,13 +165,13 @@ export default function ProjectsPage() {
             {projects.map((project) => (
               <Card
                 key={project.title}
-                className="group overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                className="group overflow-hidden hover:shadow-xl transition-[transform,box-shadow] duration-300 hover:-translate-y-1"
               >
                 <div className="aspect-[16/9] overflow-hidden relative">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-navy/50 via-transparent to-transparent" />

@@ -106,7 +106,7 @@ export default function HomePage() {
           <div className="max-w-4xl">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur text-gold text-sm mb-8 animate-fade-in">
               <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold opacity-75" />
+                <span className="motion-safe:animate-ping absolute inline-flex h-full w-full rounded-full bg-gold opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-gold" />
               </span>
               Diversified African Investment Group
@@ -148,9 +148,9 @@ export default function HomePage() {
         </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 motion-safe:animate-bounce">
           <div className="w-6 h-10 rounded-full border-2 border-white/20 flex items-start justify-center p-1.5">
-            <div className="w-1.5 h-2.5 bg-gold rounded-full animate-pulse" />
+            <div className="w-1.5 h-2.5 bg-gold rounded-full motion-safe:animate-pulse" />
           </div>
         </div>
       </section>
@@ -241,12 +241,12 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 gap-8">
             {divisions.map((div, i) => (
               <Link key={div.title} href={div.href} className="group block">
-                <div className="relative rounded-2xl overflow-hidden bg-card border border-border hover:shadow-2xl hover:-translate-y-1 transition-all duration-500">
+                <div className="relative rounded-2xl overflow-hidden bg-card border border-border hover:shadow-2xl hover:-translate-y-1 transition-[transform,box-shadow] duration-300">
                   <div className="aspect-[16/7] overflow-hidden relative">
                     <img
                       src={div.image}
                       alt={div.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       loading="lazy"
                     />
                     <div className={`absolute inset-0 bg-gradient-to-r ${div.gradient} opacity-60`} />
@@ -262,7 +262,7 @@ export default function HomePage() {
                         <p className="text-white/80 max-w-md text-sm leading-relaxed">
                           {div.description}
                         </p>
-                        <div className="mt-4 inline-flex items-center gap-2 text-gold text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div className="mt-4 inline-flex items-center gap-2 text-gold text-sm font-medium opacity-60 group-hover:opacity-100 transition-opacity">
                           Learn more <ArrowRight className="h-4 w-4" />
                         </div>
                       </div>

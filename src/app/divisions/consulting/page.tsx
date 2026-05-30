@@ -265,8 +265,8 @@ export default function ConsultingPage() {
               {processSteps.map((step, i) => (
                 <div key={step.title} className="relative text-center group">
                   <div className="relative mx-auto mb-6 flex items-center justify-center">
-                    <div className="w-24 h-24 rounded-full bg-navy flex items-center justify-center group-hover:bg-gold transition-all duration-500 shadow-lg group-hover:shadow-gold/20">
-                      <step.icon className="h-10 w-10 text-gold group-hover:text-navy transition-colors duration-500" />
+                    <div className="w-24 h-24 rounded-full bg-navy flex items-center justify-center group-hover:bg-gold transition-[transform,box-shadow,background-color] duration-300 shadow-lg group-hover:shadow-gold/20">
+                      <step.icon className="h-10 w-10 text-gold group-hover:text-navy transition-colors duration-300" />
                     </div>
                     <span className="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-gold text-navy text-xs font-bold flex items-center justify-center">
                       {step.step}

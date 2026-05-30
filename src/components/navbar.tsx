@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -33,6 +34,7 @@ const navLinks = [
 ];
 
 export function Navbar() {
+  const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
@@ -46,10 +48,10 @@ export function Navbar() {
             className="h-12 w-auto"
           />
           <div className="hidden sm:block">
-            <h1 className="text-lg font-bold font-heading text-navy leading-tight">
+            <span className="text-lg font-bold font-heading text-navy leading-tight">
               Lamarje
-            </h1>
-            <p className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+            </span>
+            <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
               Investments
             </p>
           </div>
@@ -82,8 +84,8 @@ export function Navbar() {
                 ) : (
                   <NavigationMenuItem key={link.title}>
                     <NavigationMenuLink
-                      className="group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium text-muted-foreground hover:text-navy transition-colors"
-                      render={<Link href={link.href} />}
+                      className={cn("group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors", pathname === link.href ? "text-navy font-semibold" : "text-muted-foreground hover:text-navy")}
+                      render={<Link href={link.href} aria-current={pathname === link.href ? "page" : undefined} />}
                     >
                       {link.title}
                     </NavigationMenuLink>
@@ -104,7 +106,7 @@ export function Navbar() {
           <SheetTrigger
             className="lg:hidden"
             render={
-              <Button variant="ghost" size="icon" className="h-10 w-10" />
+              <Button variant="ghost" size="icon" className="h-11 w-11" />
             }
           >
             <Menu className="h-5 w-5" />
@@ -124,8 +126,9 @@ export function Navbar() {
                   <Link
                     key={link.title}
                     href={link.href}
-                    className="block rounded-lg px-4 py-3 text-base font-medium text-muted-foreground hover:bg-muted hover:text-navy transition-colors"
+                    className={cn("block rounded-lg px-4 py-3 text-base font-medium transition-colors", pathname === link.href ? "text-navy font-semibold bg-muted" : "text-muted-foreground hover:bg-muted hover:text-navy")}
                     onClick={() => setMobileOpen(false)}
+                    aria-current={pathname === link.href ? "page" : undefined}
                   >
                     {link.title}
                   </Link>
@@ -178,7 +181,7 @@ const ListItem = ({
   <li>
     <NavigationMenuLink
       className={cn(
-        "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-muted hover:text-navy focus:bg-muted",
+        "block select-none space-y-1 rounded-md p-3 leading-none no-underline transition-colors hover:bg-muted hover:text-navy focus:bg-muted",
         className
       )}
       render={<Link href={href} {...props} />}

@@ -241,13 +241,13 @@ export default function ProcurementPage() {
             {equipmentCategories.map((category) => (
               <Card
                 key={category.title}
-                className="group overflow-hidden hover:shadow-xl transition-all duration-300"
+                className="group overflow-hidden hover:shadow-xl transition-[transform,box-shadow] duration-300"
               >
                 <div className="aspect-[16/7] overflow-hidden">
                   <img
                     src={category.image}
                     alt={category.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
                   />
                 </div>
@@ -305,8 +305,8 @@ export default function ProcurementPage() {
               {procurementProcess.map((phase) => (
                 <div key={phase.title} className="relative text-center group">
                   <div className="relative mx-auto mb-6 flex items-center justify-center">
-                    <div className="w-20 h-20 rounded-full bg-navy flex items-center justify-center group-hover:bg-gold transition-all duration-500 shadow-lg">
-                      <span className="text-gold group-hover:text-navy font-heading font-bold text-2xl transition-colors duration-500">
+                    <div className="w-20 h-20 rounded-full bg-navy flex items-center justify-center group-hover:bg-gold transition-[transform,box-shadow,background-color] duration-300 shadow-lg">
+                      <span className="text-gold group-hover:text-navy font-heading font-bold text-2xl transition-colors duration-300">
                         {phase.step}
                       </span>
                     </div>

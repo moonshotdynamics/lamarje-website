@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 const offices = [
   {
     country: "South Africa",
-    flag: "🇿🇦",
+    flagLabel: "ZA",
     address: "356 Rivonia Boulevard, Edenburg, Sandton, 2125",
     tel: "+27 87 970 5555",
     fax: "+27 86 611 4009",
@@ -44,7 +44,7 @@ const offices = [
   },
   {
     country: "DR Congo",
-    flag: "🇨🇩",
+    flagLabel: "CD",
     address: "18 Kingu, Av de la Liberation, UPN, Kinshasa",
     tel: "+243 85 123 8586",
     fax: null,
@@ -147,13 +147,13 @@ export default function ContactPage() {
             {offices.map((office) => (
               <Card
                 key={office.country}
-                className="group overflow-hidden hover:shadow-xl transition-all duration-300"
+                className="group overflow-hidden hover:shadow-xl transition-[transform,box-shadow] duration-300"
               >
                 <div className="aspect-[16/7] overflow-hidden relative">
                   <img
                     src={office.image}
                     alt={`Lamarje ${office.country} office`}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-navy/50 via-transparent to-transparent" />
@@ -162,7 +162,7 @@ export default function ContactPage() {
                       variant="secondary"
                       className="bg-white/20 backdrop-blur text-white border-0 text-lg"
                     >
-                      {office.flag} {office.country}
+                      {office.flagLabel} {office.country}
                     </Badge>
                   </div>
                 </div>

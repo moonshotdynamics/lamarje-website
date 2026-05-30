@@ -73,7 +73,7 @@ const distributionLocations = [
     country: "South Africa",
     description:
       "Primary distribution hub serving Gauteng province and the greater South African market with extensive cold-chain logistics.",
-    flag: "🇿🇦",
+    flagLabel: "ZA",
     image:
       "https://images.unsplash.com/photo-1521436312420-3a94f5877304?w=600&q=80",
   },
@@ -82,7 +82,7 @@ const distributionLocations = [
     country: "South Africa",
     description:
       "Key distribution node servicing the Tshwane metropolitan area and northern South African corridors.",
-    flag: "🇿🇦",
+    flagLabel: "ZA",
     image:
       "https://images.unsplash.com/photo-1562327029-2ef87028e6a3?w=600&q=80",
   },
@@ -91,7 +91,7 @@ const distributionLocations = [
     country: "South Africa",
     description:
       "Strategic coastal hub for import/export logistics and distribution to Western Cape and surrounding regions.",
-    flag: "🇿🇦",
+    flagLabel: "ZA",
     image:
       "https://images.unsplash.com/photo-1580060839134-75a5edca2e99?w=600&q=80",
   },
@@ -100,7 +100,7 @@ const distributionLocations = [
     country: "DR Congo",
     description:
       "Central African distribution hub serving the DRC market with integrated logistics and last-mile delivery capabilities.",
-    flag: "🇨🇩",
+    flagLabel: "CD",
     image:
       "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=600&q=80",
   },
@@ -241,13 +241,13 @@ export default function FMCGPage() {
             {productCategories.map((category) => (
               <Card
                 key={category.title}
-                className="group overflow-hidden hover:shadow-xl transition-all duration-300"
+                className="group overflow-hidden hover:shadow-xl transition-[transform,box-shadow] duration-300"
               >
                 <div className="aspect-[16/7] overflow-hidden">
                   <img
                     src={category.image}
                     alt={category.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
                   />
                 </div>
@@ -373,19 +373,19 @@ export default function FMCGPage() {
             {distributionLocations.map((location) => (
               <Card
                 key={location.city}
-                className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+                className="group hover:shadow-lg transition-[transform,box-shadow] duration-300 hover:-translate-y-1"
               >
                 <div className="aspect-[16/10] overflow-hidden">
                   <img
                     src={location.image}
                     alt={`${location.city}, ${location.country}`}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
                   />
                 </div>
                 <CardHeader>
                   <div className="flex items-center gap-2 mb-1">
-                    <span className="text-2xl">{location.flag}</span>
+                    <span className="text-2xl">{location.flagLabel}</span>
                     <div>
                       <CardTitle className="text-navy text-base">
                         {location.city}

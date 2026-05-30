@@ -179,9 +179,9 @@ export default function LamarjeCapitalPage() {
         </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 motion-safe:animate-bounce">
           <div className="w-6 h-10 rounded-full border-2 border-white/20 flex items-start justify-center p-1.5">
-            <div className="w-1.5 h-2.5 bg-gold rounded-full animate-pulse" />
+            <div className="w-1.5 h-2.5 bg-gold rounded-full motion-safe:animate-pulse" />
           </div>
         </div>
       </section>

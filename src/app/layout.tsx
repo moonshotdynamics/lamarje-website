@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -20,6 +20,15 @@ const cormorant = Cormorant_Garamond({
   weight: ["400", "500", "600", "700"],
 });
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#fafaf7" },
+    { media: "(prefers-color-scheme: dark)", color: "#0a1628" },
+  ],
+};
+
 export const metadata: Metadata = {
   title: {
     default: "Lamarje Investments | Diversified African Investment Group",
@@ -27,21 +36,6 @@ export const metadata: Metadata = {
   },
   description:
     "Lamarje Investments (Pty) Ltd is a diversified company established in 2010 with expertise in Consulting, Supply Chain, Trading, Infrastructure Development, and Financing across Africa.",
-  keywords: [
-    "Lamarje Investments",
-    "African investment",
-    "infrastructure development",
-    "supply chain",
-    "consulting",
-    "trading",
-    "financing",
-    "South Africa",
-    "DRC",
-    "Congo",
-    "Angola",
-    "Uganda",
-    "Central African Republic",
-  ],
   metadataBase: new URL("https://lamarje.com"),
   openGraph: {
     title: "Lamarje Investments | Diversified African Investment Group",
@@ -86,9 +80,15 @@ export default function RootLayout({
         <link rel="canonical" href="https://lamarje.com" />
       </head>
       <body className="min-h-full flex flex-col font-sans">
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:bg-gold focus:text-navy focus:px-5 focus:py-3 focus:rounded-lg focus:font-semibold"
+        >
+          Skip to content
+        </a>
         <ThemeProvider>
           <Navbar />
-          <main className="flex-1">{children}</main>
+          <main id="main-content" className="flex-1">{children}</main>
           <Footer />
         </ThemeProvider>
         <StructuredData />

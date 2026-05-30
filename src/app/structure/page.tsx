@@ -151,9 +151,9 @@ export default function StructurePage() {
         </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 motion-safe:animate-bounce">
           <div className="w-6 h-10 rounded-full border-2 border-white/20 flex items-start justify-center p-1.5">
-            <div className="w-1.5 h-2.5 bg-gold rounded-full animate-pulse" />
+            <div className="w-1.5 h-2.5 bg-gold rounded-full motion-safe:animate-pulse" />
           </div>
         </div>
       </section>
@@ -242,7 +242,7 @@ export default function StructurePage() {
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full max-w-3xl mt-2">
                 {cSuite.map((exec) => (
                   <div key={exec.title} className="flex flex-col items-center">
-                    <Card className="w-full bg-card border-border hover:border-gold/30 hover:shadow-lg transition-all duration-300">
+                    <Card className="w-full bg-card border-border hover:border-gold/30 hover:shadow-lg transition-[transform,box-shadow] duration-300">
                       <CardContent className="p-4 text-center">
                         <div className="h-10 w-10 rounded-lg bg-navy/5 flex items-center justify-center mx-auto mb-2">
                           <exec.icon className="h-5 w-5 text-navy" />
@@ -260,7 +260,7 @@ export default function StructurePage() {
                                 <Badge
                                   key={child}
                                   variant="secondary"
-                                  className="text-[10px] px-2 py-0"
+                                  className="text-xs px-2 py-0"
                                 >
                                   {child}
                                 </Badge>
@@ -311,10 +311,10 @@ export default function StructurePage() {
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {divisions.map((div, i) => (
                 <Link key={div.name} href={div.href} className="group block">
-                  <Card className="h-full border-border hover:border-gold/30 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden">
+                  <Card className="h-full border-border hover:border-gold/30 hover:shadow-xl hover:-translate-y-1 transition-[transform,box-shadow] duration-300 overflow-hidden">
                     <div className="h-1.5 bg-gradient-to-r from-navy to-gold" />
                     <CardContent className="p-5">
-                      <div className="h-10 w-10 rounded-xl bg-navy/5 flex items-center justify-center mb-3 group-hover:bg-gold/10 group-hover:scale-110 transition-all duration-300">
+                      <div className="h-10 w-10 rounded-xl bg-navy/5 flex items-center justify-center mb-3 group-hover:bg-gold/10 group-hover:scale-110 transition-[transform,background-color] duration-300">
                         <div.icon className="h-5 w-5 text-navy" />
                       </div>
                       <h3 className="font-heading font-bold text-navy text-sm mb-2">
@@ -334,7 +334,7 @@ export default function StructurePage() {
                           </div>
                         ))}
                       </div>
-                      <div className="mt-4 flex items-center gap-1 text-gold text-xs font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                      <div className="mt-4 flex items-center gap-1 text-gold text-xs font-medium opacity-60 group-hover:opacity-100 transition-opacity">
                         Explore division <ArrowRight className="h-3 w-3" />
                       </div>
                     </CardContent>
