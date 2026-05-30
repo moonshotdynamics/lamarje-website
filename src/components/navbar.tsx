@@ -5,7 +5,7 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, X } from "lucide-react";
+import { Menu } from "lucide-react";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -112,14 +112,11 @@ export function Navbar() {
           </SheetTrigger>
           <SheetContent side="right" className="w-full max-w-sm p-6">
             <div className="flex flex-col h-full">
-              <div className="flex items-center justify-between mb-8">
+              <div className="flex items-center mb-8">
                 <Link href="/" className="flex items-center gap-2" onClick={() => setMobileOpen(false)}>
                   <img src="/logo.png" alt="Lamarje" className="h-8 w-auto" />
                   <span className="font-heading font-bold text-navy">Lamarje</span>
                 </Link>
-                <Button variant="ghost" size="icon" onClick={() => setMobileOpen(false)}>
-                  <X className="h-5 w-5" />
-                </Button>
               </div>
 
               <nav className="flex-1 space-y-2">
