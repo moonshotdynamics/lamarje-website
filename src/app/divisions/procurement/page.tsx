@@ -39,7 +39,7 @@ const equipmentCategories = [
       "Industrial and vacuum pumps for mining dewatering, slurry handling, and process applications.",
     icon: Droplets,
     image:
-      "https://images.unsplash.com/photo-1581092160607-ee234a7b0b73?w=600&q=80",
+      "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=600&q=80",
     items: ["Vacuum Pumps", "Slurry Pumps", "Dewatering Pumps", "Blowers", "Pipeline Components"],
   },
   {
@@ -75,7 +75,7 @@ const equipmentCategories = [
       "Roof bolting systems, wire-mesh, steel cables, pipes, and structural components for underground and surface mining.",
     icon: Wrench,
     image:
-      "https://images.unsplash.com/photo-1581092335871-4c7b80ef83d7?w=600&q=80",
+      "https://images.unsplash.com/photo-1751054770504-c69daeec4721?w=600&q=80",
     items: ["Roof Bolting", "Wire-Mesh", "Steel Cables", "Pipes & Fittings", "Strainers"],
   },
   {
@@ -84,7 +84,7 @@ const equipmentCategories = [
       "Fans, dust control systems, blowers, and environmental monitoring equipment for safe working conditions.",
     icon: Wind,
     image:
-      "https://images.unsplash.com/photo-1576153192396-1d7f0f7a3ef6?w=600&q=80",
+      "https://images.unsplash.com/photo-1760537760008-5fd5b1f872d4?w=600&q=80",
     items: ["Industrial Fans", "Dust Control", "Blowers", "Air Quality Monitors", "Compressors"],
   },
 ];
@@ -169,7 +169,7 @@ export default function ProcurementPage() {
             <div className="relative hidden md:block">
               <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
                 <img
-                  src="https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?w=800&q=80"
+                  src="https://images.unsplash.com/photo-1523848309072-c199db53f137?w=800&q=80"
                   alt="Mining equipment and industrial supplies"
                   className="w-full h-full object-cover"
                   loading="lazy"

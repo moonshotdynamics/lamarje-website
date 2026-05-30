@@ -308,7 +308,7 @@ export default function HomePage() {
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
                 <div className="rounded-2xl overflow-hidden aspect-square bg-muted">
-                  <img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&q=80" alt="Airport project" className="w-full h-full object-cover" loading="lazy" />
+                  <img src="https://images.unsplash.com/photo-1732973900664-276031cfcf82?w=600&q=80" alt="Airport project" className="w-full h-full object-cover" loading="lazy" />
                 </div>
                 <div className="rounded-2xl overflow-hidden aspect-[3/4] bg-muted">
                   <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80" alt="Infrastructure" className="w-full h-full object-cover" loading="lazy" />

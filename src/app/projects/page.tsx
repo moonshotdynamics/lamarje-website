@@ -35,7 +35,7 @@ const projects = [
     category: "Infrastructure",
     icon: Plane,
     image:
-      "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80",
+      "https://images.unsplash.com/photo-1732973900664-276031cfcf82?w=800&q=80",
     description:
       "Comprehensive runway renovation and upgrade of Bangui Mpoko International Airport, enhancing safety, capacity, and operational efficiency for Central African Republic's primary aviation gateway.",
     tags: ["Aviation", "Runway", "Civil Engineering"],
@@ -57,7 +57,7 @@ const projects = [
     category: "FMCG & Logistics",
     icon: ShoppingBag,
     image:
-      "https://images.unsplash.com/photo-1562327029-2ef87028e6a3?w=800&q=80",
+      "https://images.unsplash.com/photo-1601599561096-f87c95fff1e9?w=800&q=80",
     description:
       "State-of-the-art food distribution depot in Pretoria serving as a strategic logistics hub for meat, fish, and commodity food products across the Gauteng province and beyond.",
     tags: ["Logistics", "Food Distribution", "Cold Chain"],

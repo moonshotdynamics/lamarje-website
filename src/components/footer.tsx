@@ -27,9 +27,7 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-3 mb-4 group">
-              <div className="relative h-10 w-10 overflow-hidden rounded-full bg-white/10 backdrop-blur flex items-center justify-center group-hover:bg-gold/20 transition-colors">
-                <span className="text-gold text-lg font-bold font-heading">L</span>
-              </div>
+              <img src="/logo.png" alt="Lamarje Investments" className="h-12 w-auto" />
               <div>
                 <h3 className="text-lg font-bold font-heading">Lamarje</h3>
                 <p className="text-[10px] uppercase tracking-[0.2em] text-white/60">Investments</p>
