@@ -39,10 +39,12 @@ export function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-8">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 group">
-          <div className="relative h-10 w-10 overflow-hidden rounded-full bg-navy flex items-center justify-center">
-            <span className="text-gold text-lg font-bold font-heading">L</span>
-          </div>
+        <Link href="/" className="flex items-center gap-3 group shrink-0">
+          <img
+            src="/logo.png"
+            alt="Lamarje Investments"
+            className="h-12 w-auto"
+          />
           <div className="hidden sm:block">
             <h1 className="text-lg font-bold font-heading text-navy leading-tight">
               Lamarje
@@ -112,9 +114,7 @@ export function Navbar() {
             <div className="flex flex-col h-full">
               <div className="flex items-center justify-between mb-8">
                 <Link href="/" className="flex items-center gap-2" onClick={() => setMobileOpen(false)}>
-                  <div className="h-8 w-8 rounded-full bg-navy flex items-center justify-center">
-                    <span className="text-gold text-sm font-bold">L</span>
-                  </div>
+                  <img src="/logo.png" alt="Lamarje" className="h-8 w-auto" />
                   <span className="font-heading font-bold text-navy">Lamarje</span>
                 </Link>
                 <Button variant="ghost" size="icon" onClick={() => setMobileOpen(false)}>
