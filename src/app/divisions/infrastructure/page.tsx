@@ -75,37 +75,37 @@ const sectors = [
     title: "Roads & Highways",
     description:
       "Design and construction of national highways, urban roads, and rural access routes — connecting communities and enabling commerce.",
-    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80&fm=webp",
   },
   {
     title: "Housing",
     description:
       "Residential developments from affordable housing estates to luxury communities, with integrated utilities and community infrastructure.",
-    image: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80&fm=webp",
   },
   {
     title: "Airports",
     description:
       "Runway renovations, terminal buildings, air traffic control towers, and airport support infrastructure meeting ICAO standards.",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80&fm=webp",
   },
   {
     title: "Hospitals & Healthcare",
     description:
       "Medical diagnostic centres, hospital construction, clinic networks, and healthcare infrastructure serving underserved communities.",
-    image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80&fm=webp",
   },
   {
     title: "Railways",
     description:
       "Rail line construction and rehabilitation, station buildings, signaling systems, and railway logistics infrastructure.",
-    image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&q=80&fm=webp",
   },
   {
     title: "Bridges",
     description:
       "Bridge design, construction, and rehabilitation — connecting communities across rivers, valleys, and urban divides.",
-    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80&fm=webp",
   },
 ];
 
@@ -301,9 +301,9 @@ export default function LamarjeInfrastructurePage() {
           {/* Lifecycle image */}
           <div className="mt-16 relative rounded-2xl overflow-hidden aspect-[21/9] bg-navy">
             <img
-              src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1400&q=80"
+              src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1400&q=80&fm=webp"
               alt="Construction site with cranes"
-              className="w-full h-full object-cover opacity-60"
+              width="800" height="600" className="w-full h-full object-cover opacity-60"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-navy/80 via-transparent to-navy/80" />
             <div className="absolute inset-0 flex items-center justify-center">
@@ -351,7 +351,7 @@ export default function LamarjeInfrastructurePage() {
                   <img
                     src={sector.image}
                     alt={sector.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    width="800" height="600" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                   />
                 </div>
@@ -398,9 +398,9 @@ export default function LamarjeInfrastructurePage() {
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden aspect-[4/5] bg-muted">
                 <img
-                  src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80"
+                  src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80&fm=webp"
                   alt="Solar panels in Africa"
-                  className="w-full h-full object-cover"
+                  width="800" height="600" className="w-full h-full object-cover"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy/40 to-transparent" />

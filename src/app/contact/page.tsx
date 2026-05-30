@@ -1,17 +1,11 @@
 import type { Metadata } from "next";
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
 import {
   Card,
   CardContent,
-  CardHeader,
-  CardTitle,
-  CardDescription,
 } from "@/components/ui/card";
+import ContactForm from "@/components/contact-form";
 import {
   MapPin,
   Phone,
@@ -20,7 +14,6 @@ import {
   Globe,
   ArrowRight,
   Building2,
-  Send,
   MessageSquare,
 } from "lucide-react";
 
@@ -39,7 +32,7 @@ const offices = [
     fax: "+27 86 611 4009",
     email: "info@lamarje.com",
     image:
-      "https://images.unsplash.com/photo-1521436312420-3a94f5877304?w=600&q=80",
+      "https://images.unsplash.com/photo-1521436312420-3a94f5877304?w=600&q=80&fm=webp",
     mapUrl: "https://maps.google.com/?q=356+Rivonia+Boulevard+Edenburg+Sandton+2125",
   },
   {
@@ -50,7 +43,7 @@ const offices = [
     fax: null,
     email: "info@lamarje.com",
     image:
-      "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=600&q=80",
+      "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=600&q=80&fm=webp",
     mapUrl: "https://maps.google.com/?q=18+Kingu+Av+de+la+Liberation+UPN+Kinshasa",
   },
 ];
@@ -153,7 +146,7 @@ export default function ContactPage() {
                   <img
                     src={office.image}
                     alt={`Lamarje ${office.country} office`}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    width="800" height="600" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-navy/50 via-transparent to-transparent" />
@@ -234,86 +227,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form */}
-      <section className="py-20 md:py-32 bg-muted/50">
-        <div className="container mx-auto px-4 md:px-8">
-          <div className="max-w-3xl mx-auto">
-            <div className="text-center mb-12">
-              <span className="text-gold font-semibold text-sm uppercase tracking-wider">
-                Send a Message
-              </span>
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-navy mt-4 mb-6 leading-tight">
-                We&apos;d Love to
-                <span className="text-gold"> Hear From You</span>
-              </h2>
-              <p className="text-muted-foreground leading-relaxed">
-                Fill in the form below and a member of our team will get back
-                to you as soon as possible.
-              </p>
-            </div>
-
-            <Card className="p-6 md:p-8">
-              <form className="space-y-6">
-                <div className="grid sm:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <Label htmlFor="name" className="text-navy font-medium">
-                      Full Name
-                    </Label>
-                    <Input
-                      id="name"
-                      type="text"
-                      placeholder="Your full name"
-                      className="h-11 rounded-xl"
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="email" className="text-navy font-medium">
-                      Email Address
-                    </Label>
-                    <Input
-                      id="email"
-                      type="email"
-                      placeholder="your@email.com"
-                      className="h-11 rounded-xl"
-                    />
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="subject" className="text-navy font-medium">
-                    Subject
-                  </Label>
-                  <Input
-                    id="subject"
-                    type="text"
-                    placeholder="How can we help you?"
-                    className="h-11 rounded-xl"
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <Label htmlFor="message" className="text-navy font-medium">
-                    Message
-                  </Label>
-                  <Textarea
-                    id="message"
-                    placeholder="Tell us about your project, enquiry, or partnership opportunity..."
-                    className="min-h-[140px] rounded-xl resize-y"
-                  />
-                </div>
-
-                <Button
-                  type="submit"
-                  size="lg"
-                  className="w-full bg-navy hover:bg-navy-light text-white font-semibold text-base rounded-full group"
-                >
-                  <Send className="h-5 w-5 mr-2 group-hover:translate-x-1 transition-transform" />
-                  Send Message
-                </Button>
-              </form>
-            </Card>
-          </div>
-        </div>
-      </section>
+      <ContactForm />
 
       {/* Response Promise */}
       <section className="py-20 md:py-32 bg-navy relative overflow-hidden">

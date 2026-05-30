@@ -35,7 +35,7 @@ const productCategories = [
       "Premium-quality chicken, mutton, lamb, beef, and turkey — sourced from trusted suppliers with rigorous quality standards.",
     icon: Drumstick,
     image:
-      "https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=600&q=80",
+      "https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=600&q=80&fm=webp",
     items: ["Chicken", "Mutton", "Lamb", "Beef", "Turkey"],
   },
   {
@@ -44,7 +44,7 @@ const productCategories = [
       "Fresh and salted fish products sourced sustainably from reliable fisheries for markets across Africa.",
     icon: Fish,
     image:
-      "https://images.unsplash.com/photo-1534043464124-3be32fe000c9?w=600&q=80",
+      "https://images.unsplash.com/photo-1534043464124-3be32fe000c9?w=600&q=80&fm=webp",
     items: ["Fresh Fish", "Salted Fish", "Processed Fish", "Seafood Products"],
   },
   {
@@ -53,7 +53,7 @@ const productCategories = [
       "Cooking oils, sweet potatoes, and staple commodities — ensuring consistent supply for wholesale and retail distribution.",
     icon: Wheat,
     image:
-      "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=600&q=80",
+      "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=600&q=80&fm=webp",
     items: ["Cooking Oil", "Sweet Potato", "Grain Products", "Staple Foods"],
   },
   {
@@ -62,7 +62,7 @@ const productCategories = [
       "Curated selection of exotic and specialty food products to meet diverse consumer demand in growing African urban markets.",
     icon: ShoppingBag,
     image:
-      "https://images.unsplash.com/photo-1550989460-0adf9ea622e2?w=600&q=80",
+      "https://images.unsplash.com/photo-1550989460-0adf9ea622e2?w=600&q=80&fm=webp",
     items: ["Imported Specialties", "Exotic Produce", "Premium Ingredients", "Gourmet Products"],
   },
 ];
@@ -75,7 +75,7 @@ const distributionLocations = [
       "Primary distribution hub serving Gauteng province and the greater South African market with extensive cold-chain logistics.",
     flagLabel: "ZA",
     image:
-      "https://images.unsplash.com/photo-1521436312420-3a94f5877304?w=600&q=80",
+      "https://images.unsplash.com/photo-1521436312420-3a94f5877304?w=600&q=80&fm=webp",
   },
   {
     city: "Pretoria",
@@ -84,7 +84,7 @@ const distributionLocations = [
       "Key distribution node servicing the Tshwane metropolitan area and northern South African corridors.",
     flagLabel: "ZA",
     image:
-      "https://images.unsplash.com/photo-1562327029-2ef87028e6a3?w=600&q=80",
+      "https://images.unsplash.com/photo-1562327029-2ef87028e6a3?w=600&q=80&fm=webp",
   },
   {
     city: "Cape Town",
@@ -93,7 +93,7 @@ const distributionLocations = [
       "Strategic coastal hub for import/export logistics and distribution to Western Cape and surrounding regions.",
     flagLabel: "ZA",
     image:
-      "https://images.unsplash.com/photo-1580060839134-75a5edca2e99?w=600&q=80",
+      "https://images.unsplash.com/photo-1580060839134-75a5edca2e99?w=600&q=80&fm=webp",
   },
   {
     city: "Kinshasa",
@@ -102,7 +102,7 @@ const distributionLocations = [
       "Central African distribution hub serving the DRC market with integrated logistics and last-mile delivery capabilities.",
     flagLabel: "CD",
     image:
-      "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=600&q=80",
+      "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=600&q=80&fm=webp",
   },
 ];
 
@@ -185,9 +185,9 @@ export default function FMCGPage() {
             <div className="relative hidden md:block">
               <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
                 <img
-                  src="https://images.unsplash.com/photo-1488459717020-0df7bd2d4a8e?w=800&q=80"
+                  src="https://images.unsplash.com/photo-1488459717020-0df7bd2d4a8e?w=800&q=80&fm=webp"
                   alt="Food distribution and logistics"
-                  className="w-full h-full object-cover"
+                  width="800" height="600" className="w-full h-full object-cover"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent" />
@@ -247,7 +247,7 @@ export default function FMCGPage() {
                   <img
                     src={category.image}
                     alt={category.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    width="800" height="600" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
                   />
                 </div>
@@ -338,9 +338,9 @@ export default function FMCGPage() {
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden aspect-[4/5]">
                 <img
-                  src="https://images.unsplash.com/photo-1574672280600-4accfa5b6f98?w=800&q=80"
+                  src="https://images.unsplash.com/photo-1574672280600-4accfa5b6f98?w=800&q=80&fm=webp"
                   alt="African food market and distribution"
-                  className="w-full h-full object-cover"
+                  width="800" height="600" className="w-full h-full object-cover"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy/40 to-transparent" />
@@ -379,7 +379,7 @@ export default function FMCGPage() {
                   <img
                     src={location.image}
                     alt={`${location.city}, ${location.country}`}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    width="800" height="600" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
                   />
                 </div>
@@ -468,17 +468,17 @@ export default function FMCGPage() {
               <div className="space-y-4">
                 <div className="rounded-2xl overflow-hidden aspect-square">
                   <img
-                    src="https://images.unsplash.com/photo-1553163147-622ab57be1c7?w=600&q=80"
+                    src="https://images.unsplash.com/photo-1553163147-622ab57be1c7?w=600&q=80&fm=webp"
                     alt="Meat products"
-                    className="w-full h-full object-cover"
+                    width="800" height="600" className="w-full h-full object-cover"
                     loading="lazy"
                   />
                 </div>
                 <div className="rounded-2xl overflow-hidden aspect-[3/4]">
                   <img
-                    src="https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?w=600&q=80"
+                    src="https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?w=600&q=80&fm=webp"
                     alt="Cooking oil"
-                    className="w-full h-full object-cover"
+                    width="800" height="600" className="w-full h-full object-cover"
                     loading="lazy"
                   />
                 </div>
@@ -486,17 +486,17 @@ export default function FMCGPage() {
               <div className="space-y-4 pt-8">
                 <div className="rounded-2xl overflow-hidden aspect-[4/3]">
                   <img
-                    src="https://images.unsplash.com/photo-1574126154517-d1e0d89ef734?w=600&q=80"
+                    src="https://images.unsplash.com/photo-1574126154517-d1e0d89ef734?w=600&q=80&fm=webp"
                     alt="Fresh fish"
-                    className="w-full h-full object-cover"
+                    width="800" height="600" className="w-full h-full object-cover"
                     loading="lazy"
                   />
                 </div>
                 <div className="rounded-2xl overflow-hidden aspect-[3/4]">
                   <img
-                    src="https://images.unsplash.com/photo-1550258987-190a2d41a8ba?w=600&q=80"
+                    src="https://images.unsplash.com/photo-1550258987-190a2d41a8ba?w=600&q=80&fm=webp"
                     alt="Fresh produce"
-                    className="w-full h-full object-cover"
+                    width="800" height="600" className="w-full h-full object-cover"
                     loading="lazy"
                   />
                 </div>

@@ -262,9 +262,9 @@ export default function LamarjeCapitalPage() {
           {/* Market image */}
           <div className="relative rounded-2xl overflow-hidden aspect-[21/9] bg-navy">
             <img
-              src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1400&q=80"
+              src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1400&q=80&fm=webp"
               alt="Financial trading floor"
-              className="w-full h-full object-cover opacity-70"
+              width="800" height="600" className="w-full h-full object-cover opacity-70"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-navy/80 via-transparent to-navy/80" />
             <div className="absolute inset-0 flex items-center justify-center">
@@ -314,9 +314,9 @@ export default function LamarjeCapitalPage() {
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden aspect-[4/5] bg-muted">
                 <img
-                  src="https://images.unsplash.com/photo-1559526324-593bc073d938?w=800&q=80"
+                  src="https://images.unsplash.com/photo-1559526324-593bc073d938?w=800&q=80&fm=webp"
                   alt="African financial district"
-                  className="w-full h-full object-cover"
+                  width="800" height="600" className="w-full h-full object-cover"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy/40 to-transparent" />

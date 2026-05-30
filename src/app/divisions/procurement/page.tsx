@@ -39,7 +39,7 @@ const equipmentCategories = [
       "Industrial and vacuum pumps for mining dewatering, slurry handling, and process applications.",
     icon: Droplets,
     image:
-      "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=600&q=80",
+      "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=600&q=80&fm=webp",
     items: ["Vacuum Pumps", "Slurry Pumps", "Dewatering Pumps", "Blowers", "Pipeline Components"],
   },
   {
@@ -48,7 +48,7 @@ const equipmentCategories = [
       "Control panels, generators, cables, and electrical infrastructure for mining and industrial operations.",
     icon: Zap,
     image:
-      "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80",
+      "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80&fm=webp",
     items: ["Control Panels", "Generators", "Switchgear", "Cables", "Distribution Boards"],
   },
   {
@@ -57,7 +57,7 @@ const equipmentCategories = [
       "Complete range of personal protective equipment and safety gear for mining and industrial environments.",
     icon: HardHat,
     image:
-      "https://images.unsplash.com/photo-1575517111478-7f6afd0973db?w=600&q=80",
+      "https://images.unsplash.com/photo-1575517111478-7f6afd0973db?w=600&q=80&fm=webp",
     items: ["Hard Hats", "Safety Boots", "Respirators", "Gloves & Eyewear", "Fire Fighting Gear"],
   },
   {
@@ -66,7 +66,7 @@ const equipmentCategories = [
       "Bearings, chains, pneumatic brakes, wire ropes, lifting equipment, and mechanical spares for mining operations.",
     icon: Cog,
     image:
-      "https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?w=600&q=80",
+      "https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?w=600&q=80&fm=webp",
     items: ["Bearings", "Chains", "Wire Rope", "Lifting Equipment", "Pneumatic Brakes"],
   },
   {
@@ -75,7 +75,7 @@ const equipmentCategories = [
       "Roof bolting systems, wire-mesh, steel cables, pipes, and structural components for underground and surface mining.",
     icon: Wrench,
     image:
-      "https://images.unsplash.com/photo-1751054770504-c69daeec4721?w=600&q=80",
+      "https://images.unsplash.com/photo-1751054770504-c69daeec4721?w=600&q=80&fm=webp",
     items: ["Roof Bolting", "Wire-Mesh", "Steel Cables", "Pipes & Fittings", "Strainers"],
   },
   {
@@ -84,7 +84,7 @@ const equipmentCategories = [
       "Fans, dust control systems, blowers, and environmental monitoring equipment for safe working conditions.",
     icon: Wind,
     image:
-      "https://images.unsplash.com/photo-1760537760008-5fd5b1f872d4?w=600&q=80",
+      "https://images.unsplash.com/photo-1760537760008-5fd5b1f872d4?w=600&q=80&fm=webp",
     items: ["Industrial Fans", "Dust Control", "Blowers", "Air Quality Monitors", "Compressors"],
   },
 ];
@@ -169,9 +169,9 @@ export default function ProcurementPage() {
             <div className="relative hidden md:block">
               <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
                 <img
-                  src="https://images.unsplash.com/photo-1523848309072-c199db53f137?w=800&q=80"
+                  src="https://images.unsplash.com/photo-1523848309072-c199db53f137?w=800&q=80&fm=webp"
                   alt="Mining equipment and industrial supplies"
-                  className="w-full h-full object-cover"
+                  width="800" height="600" className="w-full h-full object-cover"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent" />
@@ -247,7 +247,7 @@ export default function ProcurementPage() {
                   <img
                     src={category.image}
                     alt={category.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    width="800" height="600" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
                   />
                 </div>
@@ -378,9 +378,9 @@ export default function ProcurementPage() {
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden aspect-[3/4]">
                 <img
-                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80"
+                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80&fm=webp"
                   alt="Industrial mining equipment and machinery"
-                  className="w-full h-full object-cover"
+                  width="800" height="600" className="w-full h-full object-cover"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy/40 to-transparent" />

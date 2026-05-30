@@ -26,7 +26,7 @@ const divisions = [
     description: "Forex trading, indices, commodities, and innovative financing solutions for African businesses and governments.",
     icon: TrendingUp,
     href: "/divisions/capital",
-    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&q=80&fm=webp",
     gradient: "from-navy to-navy-light",
   },
   {
@@ -34,7 +34,7 @@ const divisions = [
     description: "Roads, housing, airports, hospitals and solar energy projects — from inception through to commissioning.",
     icon: Building2,
     href: "/divisions/infrastructure",
-    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80&fm=webp",
     gradient: "from-navy-light to-navy",
   },
   {
@@ -42,7 +42,7 @@ const divisions = [
     description: "Mining procurement, logistics, and FMCG distribution — adding value through effective supply chain management.",
     icon: Truck,
     href: "/divisions/supply-chain",
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&q=80&fm=webp",
     gradient: "from-navy to-navy-light",
   },
   {
@@ -50,7 +50,7 @@ const divisions = [
     description: "Strategic advisory, M&A, transaction structuring, and expert guidance for private equity and infrastructure portfolios.",
     icon: BarChart3,
     href: "/divisions/consulting",
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80&fm=webp",
     gradient: "from-navy-light to-navy",
   },
 ];
@@ -208,9 +208,9 @@ export default function HomePage() {
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden aspect-[4/5] bg-muted">
                 <img
-                  src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80"
+                  src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80&fm=webp"
                   alt="African infrastructure development"
-                  className="w-full h-full object-cover"
+                  width="800" height="600" className="w-full h-full object-cover"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy/40 to-transparent" />
@@ -246,7 +246,7 @@ export default function HomePage() {
                     <img
                       src={div.image}
                       alt={div.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      width="800" height="600" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       loading="lazy"
                     />
                     <div className={`absolute inset-0 bg-gradient-to-r ${div.gradient} opacity-60`} />
@@ -308,18 +308,18 @@ export default function HomePage() {
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
                 <div className="rounded-2xl overflow-hidden aspect-square bg-muted">
-                  <img src="https://images.unsplash.com/photo-1732973900664-276031cfcf82?w=600&q=80" alt="Airport project" className="w-full h-full object-cover" loading="lazy" />
+                  <img src="https://images.unsplash.com/photo-1732973900664-276031cfcf82?w=600&q=80&fm=webp" alt="Airport project" width="800" height="600" className="w-full h-full object-cover" loading="lazy" />
                 </div>
                 <div className="rounded-2xl overflow-hidden aspect-[3/4] bg-muted">
-                  <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80" alt="Infrastructure" className="w-full h-full object-cover" loading="lazy" />
+                  <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80&fm=webp" alt="Infrastructure" width="800" height="600" className="w-full h-full object-cover" loading="lazy" />
                 </div>
               </div>
               <div className="space-y-4 pt-8">
                 <div className="rounded-2xl overflow-hidden aspect-[4/3] bg-muted">
-                  <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&q=80" alt="Solar housing" className="w-full h-full object-cover" loading="lazy" />
+                  <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&q=80&fm=webp" alt="Solar housing" width="800" height="600" className="w-full h-full object-cover" loading="lazy" />
                 </div>
                 <div className="rounded-2xl overflow-hidden aspect-[3/4] bg-muted">
-                  <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&q=80" alt="Mining equipment" className="w-full h-full object-cover" loading="lazy" />
+                  <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&q=80&fm=webp" alt="Mining equipment" width="800" height="600" className="w-full h-full object-cover" loading="lazy" />
                 </div>
               </div>
             </div>

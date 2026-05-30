@@ -35,7 +35,7 @@ const projects = [
     category: "Infrastructure",
     icon: Plane,
     image:
-      "https://images.unsplash.com/photo-1732973900664-276031cfcf82?w=800&q=80",
+      "https://images.unsplash.com/photo-1732973900664-276031cfcf82?w=800&q=80&fm=webp",
     description:
       "Comprehensive runway renovation and upgrade of Bangui Mpoko International Airport, enhancing safety, capacity, and operational efficiency for Central African Republic's primary aviation gateway.",
     tags: ["Aviation", "Runway", "Civil Engineering"],
@@ -46,7 +46,7 @@ const projects = [
     category: "Infrastructure",
     icon: Hammer,
     image:
-      "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80",
+      "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80&fm=webp",
     description:
       "Major road renovation project connecting Bangui Mpoko International Airport to the Central Business District, improving urban mobility and economic connectivity for the capital city.",
     tags: ["Roads", "Urban Development", "Transport"],
@@ -57,7 +57,7 @@ const projects = [
     category: "FMCG & Logistics",
     icon: ShoppingBag,
     image:
-      "https://images.unsplash.com/photo-1601599561096-f87c95fff1e9?w=800&q=80",
+      "https://images.unsplash.com/photo-1601599561096-f87c95fff1e9?w=800&q=80&fm=webp",
     description:
       "State-of-the-art food distribution depot in Pretoria serving as a strategic logistics hub for meat, fish, and commodity food products across the Gauteng province and beyond.",
     tags: ["Logistics", "Food Distribution", "Cold Chain"],
@@ -68,7 +68,7 @@ const projects = [
     category: "Healthcare",
     icon: Stethoscope,
     image:
-      "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80",
+      "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80&fm=webp",
     description:
       "Development of a modern medical diagnostic centre equipped with advanced imaging and laboratory facilities, improving healthcare accessibility for communities in CAR.",
     tags: ["Healthcare", "Medical", "Diagnostics"],
@@ -79,7 +79,7 @@ const projects = [
     category: "Housing & Energy",
     icon: Sun,
     image:
-      "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&q=80",
+      "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&q=80&fm=webp",
     description:
       "Sustainable housing development integrating solar roofing solutions for clean, reliable energy — addressing both residential needs and energy access challenges in the DRC.",
     tags: ["Housing", "Solar Energy", "Sustainability"],
@@ -90,7 +90,7 @@ const projects = [
     category: "Procurement & Supply",
     icon: Wrench,
     image:
-      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80",
+      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80&fm=webp",
     description:
       "Ongoing supply and delivery of mining equipment including pumps, control panels, safety gear, and mechanical components to mines in the Lubumbashi mining region.",
     tags: ["Mining", "Equipment", "Industrial"],
@@ -101,7 +101,7 @@ const projects = [
     category: "FMCG & Logistics",
     icon: Fish,
     image:
-      "https://images.unsplash.com/photo-1534043464124-3be32fe000c9?w=800&q=80",
+      "https://images.unsplash.com/photo-1534043464124-3be32fe000c9?w=800&q=80&fm=webp",
     description:
       "Reliable supply and distribution of salted fish products to markets and communities throughout the Katanga province, ensuring food security and consistent availability.",
     tags: ["Food Supply", "Fish", "Distribution"],
@@ -112,7 +112,7 @@ const projects = [
     category: "Financing",
     icon: Landmark,
     image:
-      "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80",
+      "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80&fm=webp",
     description:
       "Funding and financial structuring for small to large-scale projects across South Africa and the DRC, combining capital solutions with strategic project oversight.",
     tags: ["Finance", "Investment", "Development"],
@@ -171,7 +171,7 @@ export default function ProjectsPage() {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    width="800" height="600" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-navy/50 via-transparent to-transparent" />

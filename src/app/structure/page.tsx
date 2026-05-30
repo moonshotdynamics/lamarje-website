@@ -384,9 +384,9 @@ export default function StructurePage() {
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden aspect-[4/3] bg-muted">
                 <img
-                  src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80"
+                  src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80&fm=webp"
                   alt="Lamarje executive leadership"
-                  className="w-full h-full object-cover"
+                  width="800" height="600" className="w-full h-full object-cover"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent" />

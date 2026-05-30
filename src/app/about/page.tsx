@@ -253,9 +253,9 @@ export default function AboutPage() {
             <div className="relative order-2 md:order-1">
               <div className="relative rounded-2xl overflow-hidden aspect-[4/3] bg-muted">
                 <img
-                  src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=80"
+                  src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=80&fm=webp"
                   alt="Lamarje team collaborating on African solutions"
-                  className="w-full h-full object-cover"
+                  width="800" height="600" className="w-full h-full object-cover"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy/50 to-transparent" />
@@ -500,9 +500,9 @@ export default function AboutPage() {
           <div className="mt-12 max-w-2xl mx-auto">
             <div className="relative rounded-2xl overflow-hidden aspect-[16/9] bg-muted">
               <img
-                src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800&q=80"
+                src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800&q=80&fm=webp"
                 alt="African continent"
-                className="w-full h-full object-cover opacity-60"
+                width="800" height="600" className="w-full h-full object-cover opacity-60"
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/30 to-transparent" />

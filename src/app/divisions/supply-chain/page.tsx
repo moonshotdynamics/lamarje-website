@@ -42,21 +42,21 @@ const coreServices = [
     description:
       "Strategic sourcing and procurement management for mining, industrial, and FMCG sectors. We negotiate favourable terms, ensure quality compliance, and manage supplier relationships across global markets.",
     icon: Package,
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80&fm=webp",
   },
   {
     title: "Quality Management",
     description:
       "Rigorous quality assurance and control systems embedded at every stage of the supply chain — from supplier vetting and factory inspections to incoming goods inspection and final delivery verification.",
     icon: Shield,
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80&fm=webp",
   },
   {
     title: "Logistics & Distribution",
     description:
       "End-to-end logistics management including freight forwarding, warehousing, last-mile delivery, and cross-border transportation across African corridors.",
     icon: Truck,
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80&fm=webp",
   },
 ];
 
@@ -288,7 +288,7 @@ export default function SupplyChainPage() {
                     <img
                       src={service.image}
                       alt={service.title}
-                      className="w-full h-full object-cover"
+                      width="800" height="600" className="w-full h-full object-cover"
                       loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-navy/20 to-transparent" />
@@ -329,9 +329,9 @@ export default function SupplyChainPage() {
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden aspect-[4/5] bg-muted">
                 <img
-                  src="https://images.unsplash.com/photo-1578319439584-104c94d37305?w=800&q=80"
+                  src="https://images.unsplash.com/photo-1578319439584-104c94d37305?w=800&q=80&fm=webp"
                   alt="Mining operations in Africa"
-                  className="w-full h-full object-cover"
+                  width="800" height="600" className="w-full h-full object-cover"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy/40 to-transparent" />
@@ -373,9 +373,9 @@ export default function SupplyChainPage() {
             <div className="relative md:order-2">
               <div className="relative rounded-2xl overflow-hidden aspect-[4/5] bg-muted">
                 <img
-                  src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=800&q=80"
+                  src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=800&q=80&fm=webp"
                   alt="Food retail and FMCG distribution"
-                  className="w-full h-full object-cover"
+                  width="800" height="600" className="w-full h-full object-cover"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy/40 to-transparent" />

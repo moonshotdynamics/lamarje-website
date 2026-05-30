@@ -196,9 +196,9 @@ export default function ConsultingPage() {
             <div className="relative hidden md:block">
               <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
                 <img
-                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80"
+                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80&fm=webp"
                   alt="Strategic consulting meeting"
-                  className="w-full h-full object-cover"
+                  width="800" height="600" className="w-full h-full object-cover"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent" />
