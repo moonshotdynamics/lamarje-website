@@ -282,7 +282,7 @@ export default function ProjectsPage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white/20 text-white hover:bg-white/10 hover:text-white px-10 py-6 text-base rounded-full"
+                className="border-white/30 text-white hover:bg-white/15 hover:text-white hover:border-white/50 px-10 py-6 text-base rounded-full"
               >
                 Explore Our Capabilities
               </Button>
