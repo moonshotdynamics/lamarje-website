@@ -169,7 +169,7 @@ export default function LamarjeCapitalPage() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-white/30 text-white hover:bg-white/15 hover:text-white hover:border-white/50 px-8 py-6 text-base rounded-full"
+                  className="bg-transparent border-white/40 text-white hover:bg-white/10 hover:text-white hover:border-white/60 px-8 py-6 text-base rounded-full"
                 >
                   Explore Markets
                 </Button>
@@ -418,7 +418,7 @@ export default function LamarjeCapitalPage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white/30 text-white hover:bg-white/15 hover:text-white hover:border-white/50 px-10 py-6 text-base rounded-full"
+                className="bg-transparent border-white/40 text-white hover:bg-white/10 hover:text-white hover:border-white/60 px-10 py-6 text-base rounded-full"
               >
                 Explore Infrastructure
               </Button>
